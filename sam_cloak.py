@@ -4,8 +4,8 @@ import numpy as np
 from sam2.build_sam import build_sam2_camera_predictor
 from ultralytics import YOLO
 
-sam2_checkpoint = "/home/sachin/Desktop/All/projects/dart/sam2/segment-anything-2-real-time/checkpoints/sam2.1_hiera_tiny.pt"
-model_cfg = "configs/sam2.1/sam2.1_hiera_t.yaml"
+sam2_checkpoint = "MODEL_CHECKPOINT"
+model_cfg = "MODEL_CONFIG"
 predictor = build_sam2_camera_predictor(model_cfg, sam2_checkpoint)
 
 cap = cv2.VideoCapture(1)
